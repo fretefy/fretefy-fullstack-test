@@ -1,9 +1,0 @@
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\bin\Debug\netstandard2.1\Fretefy.Test.Domain.deps.json
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\bin\Debug\netstandard2.1\Fretefy.Test.Domain.dll
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\bin\Debug\netstandard2.1\Fretefy.Test.Domain.pdb
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.csprojAssemblyReference.cache
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.AssemblyInfoInputs.cache
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.AssemblyInfo.cs
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.csproj.CoreCompileInputs.cache
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.dll
-D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Domain\obj\Debug\netstandard2.1\Fretefy.Test.Domain.pdb
