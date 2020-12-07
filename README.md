@@ -60,6 +60,10 @@ No front deve conter as seguintes operações:
 
 Na listagem de regiões devem ser listadas todas as regiões cadastradas e conter ações específicas
 
+
+![Cadastro de Regiões](assets/referencia_listagem.png)
+> Imagem de referência para a listagem
+
 ### **Requisitos**
 
 - As regiões devem ser listadas em forma de tabela (table)
@@ -79,6 +83,7 @@ Na listagem de regiões devem ser listadas todas as regiões cadastradas e conte
 No cadastro você deve permitir que o usuário realize o cadastro de uma região, contendo os campos requeridos.
 
 ![Cadastro de Regiões](assets/referencia_cadastro.png)
+> Imagem de referência para o cadastro
 
 ### **Requisitos**
 - O campo nome é obrigatório
