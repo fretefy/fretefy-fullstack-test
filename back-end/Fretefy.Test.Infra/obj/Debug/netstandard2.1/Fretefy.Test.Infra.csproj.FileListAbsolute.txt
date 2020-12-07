@@ -1,0 +1,12 @@
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\bin\Debug\netstandard2.1\Fretefy.Test.Domain.dll
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.csprojAssemblyReference.cache
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.AssemblyInfoInputs.cache
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.AssemblyInfo.cs
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\bin\Debug\netstandard2.1\Fretefy.Test.Infra.deps.json
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\bin\Debug\netstandard2.1\Fretefy.Test.Infra.dll
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\bin\Debug\netstandard2.1\Fretefy.Test.Infra.pdb
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\bin\Debug\netstandard2.1\Fretefy.Test.Domain.pdb
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.csproj.CopyComplete
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.dll
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.pdb
+D:\Workspace\fretefy-fullstack-test\back-end\Fretefy.Test.Infra\obj\Debug\netstandard2.1\Fretefy.Test.Infra.csproj.CoreCompileInputs.cache
