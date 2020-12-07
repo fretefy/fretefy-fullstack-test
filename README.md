@@ -78,6 +78,8 @@ Na listagem de regiões devem ser listadas todas as regiões cadastradas e conte
 
 No cadastro você deve permitir que o usuário realize o cadastro de uma região, contendo os campos requeridos.
 
+![Cadastro de Regiões](assets/referencia_cadastro.png)
+
 ### **Requisitos**
 - O campo nome é obrigatório
 - Não permitir cadastrar duas regiões com o mesmo nome
