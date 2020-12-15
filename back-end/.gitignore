@@ -1,5 +1,6 @@
 # Visual Studio Folders
 .vs/
+.vscode/
 
 # Visual Studio Build results
 [Dd]ebug/
