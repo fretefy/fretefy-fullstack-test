@@ -1,3 +1,36 @@
-<p>
-  regiao works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col col-md-12 mt-5">
+      <nz-card>
+        <span style="font-weight: bold; font-size: 20px; margin-right: 10px;">Regiões</span><button
+          [routerLink]="['/regiao/adicionar']" routerLinkActive="active" nz-button nzType="primary" nzShape="round"><i
+            nz-icon nzType="plus"></i>Cadastrar</button>
+      </nz-card>
+    </div>
+    <div class="col col-md-12 mt-2">
+      <nz-table #table [nzData]="regioes$ | async">
+        <thead>
+          <tr>
+            <th>Nome da região</th>
+            <th>Estado</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of table.data">
+            <td>{{data.nome}}</td>
+            <td>{{data.ativa? "Ativa" : "Inativa"}}</td>
+            <td>
+              <button (click)="editar(data)" nz-button [nzSize]="'small'" nzType="default"><i nz-icon nzType="edit"></i></button>
+              <nz-divider nzType="vertical"></nz-divider>
+              <button *ngIf="!data.ativa" (click)="ativar(data)" nz-button [nzSize]="'small'" nzType="primary"><i nz-icon
+                  nzType="check"></i></button>
+              <button *ngIf="data.ativa" (click)="desativar(data)" nz-button [nzSize]="'small'" nzType="danger"><i nz-icon
+                  nzType="close"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+  </div>
+</div>

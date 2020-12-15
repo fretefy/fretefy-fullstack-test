@@ -1,0 +1,8 @@
+<div style="width: 100%; height: 50px;">
+  <nz-select [(ngModel)]="uf" (ngModelChange)="selectUf($event)" nzShowSearch nzPlaceHolder="UF" style="width: 20%; margin-right: 2%;">
+    <nz-option *ngFor="let item of ufs$ | async" [nzLabel]="item" [nzValue]="item"></nz-option>
+  </nz-select>
+  <nz-select [(ngModel)]="cidade" (ngModelChange)="selectCidade($event)" [nzDisabled]="!cidades$" nzShowSearch nzPlaceHolder="Cidade" style="width: 78%;">
+    <nz-option *ngFor="let item of cidades$ | async" [nzLabel]="item.nome" [nzValue]="item"></nz-option>
+  </nz-select>
+</div>

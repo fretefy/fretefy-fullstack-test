@@ -1,0 +1,37 @@
+<form #formRegiao="ngForm" nz-form [formGroup]="form" (ngSubmit)="submit()" role="form">
+  <p style="font-weight: bold; font-size: 18px;">Cadastro de região</p>
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group>
+        <input nz-input formControlName="nome" placeholder="Nome da região" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <ng-container *ngIf="regiaoId">
+    <p style="font-weight: bold; font-size: 18px;">Locais da região</p>
+    <nz-tag *ngFor="let item of regiao?.cidades">{{getCidade(item.cidadeId)}}</nz-tag>
+    <p style="font-weight: bold; font-size: 18px;" class="mt-3">Selecionar novos locais</p>
+  </ng-container>
+  <p *ngIf="!regiaoId" style="font-weight: bold; font-size: 18px;">Locais da região</p>
+  <ng-container formArrayName="cidades">
+    <nz-form-item *ngFor="let item of cidades().controls; let i=index" [formGroupName]="i">
+      <app-cidade-picker style="width: 90%;" formControlName="id"></app-cidade-picker>
+      <span class="trash-button" *ngIf="!regiaoId && i > 0" (click)="removeCidade(i)"><i nz-icon nzType="delete"></i></span>
+      <span class="trash-button" *ngIf="regiaoId" (click)="removeCidade(i)"><i nz-icon nzType="delete"></i></span>
+    </nz-form-item>
+  </ng-container>
+  <div class="text-center">
+    <span class="button" (click)="addCidade()"><i nz-icon nzType="plus"></i>Adicionar local</span>
+  </div>
+</form>
+
+<div class="mt-4">
+  <button nz-button nzType="secondary" style="margin-right: 10px;" [routerLink]="['/regiao']" routerLinkActive="active">
+    Cancelar
+  </button>
+  <button nz-button type="submit" nzType="primary" (click)="formRegiao.ngSubmit.emit(form.value)"
+    [disabled]="!form.valid" [nzLoading]="loading">
+    <span *ngIf="!regiaoId">Cadastrar</span>
+    <span *ngIf="regiaoId">Salvar</span>
+  </button>
+</div>
