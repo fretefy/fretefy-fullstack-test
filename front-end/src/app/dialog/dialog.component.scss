@@ -1,17 +1,9 @@
-.container-fluid {
-    display: block;
-    margin: 0 18rem 0 18rem;
-    align-items: center;
-
-    .title{
-        font-weight: 400;
-        font-size: 1.2rem;
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     }
-
-    .align-button {
-        margin-bottom: 2rem;
-    }
-
+    
     .style-button {
         display: inline-block;
         font-weight: 400;
@@ -26,13 +18,20 @@
         border-radius: 0.25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         cursor: pointer;
+        margin-right: 1rem;
     }
-
+    
     .style-button:hover {
-        background-color: #AAA7A7;
+        color: aliceblue;
+        background-color: #444242;
     }
-}
-
-table {
-    width: 100%;
-}
+    
+    .style-button:disabled {
+        color: #212529 ;
+        background-color: #D5CECE;
+        cursor: auto;
+    }
+    
+    mat-form-field{
+        width: 100%;
+    }
