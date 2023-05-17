@@ -1,0 +1,140 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+th {
+    border: 1px solid silver;
+    width: 500px;
+    padding: 8px 0;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.edit-btn img {
+    background: #d4d4d4;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transform: scale(.8);
+}
+
+.edit-btn img:hover {
+    transform: scale(.9);
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    cursor: pointer;
+    
+}
+
+.header-table {
+    background-color: cornflowerblue;
+}
+
+.add-btn img {
+    background: cornflowerblue;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid silver;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.ativa {
+    height: 32px;
+    background: red;
+}
+
+.edit-btn {
+    display: flex;
+    border:none;
+    width: fit-content;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.action-btn {
+    border: none;
+    cursor: pointer;
+    padding-left: 16px;
+    width: fit-content;
+}
+
+.status-circle {
+    width: 22px;
+    height: 22px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: green;
+}
+
+.desactive {
+    background-color: red;
+}
+
+.status {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+button {
+    border: none;
+    height: 42px;
+    width: 100px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.row-values th {
+    font-weight: 400;
+}
+
+.page-title {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 96%;
+    }
+
+    .page-title {
+        width: 96%;
+    }
+    
+    .status-btn {
+        height: 30px;
+        width: 75px;
+    }
+
+    th {
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    .action-btn {
+        padding-left: 8px;
+    }
+}
+

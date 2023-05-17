@@ -1,0 +1,24 @@
+
+<form [formGroup]="cidadeGroup">
+<div class="city-field" formArrayName="cidades" *ngFor="let c of cidadeGroup.get('cidades')['controls']; let i=index">
+    <div class="form-field">
+        <div class="label-wrapper">
+            <label>Cidade</label>
+            <div class="add-city-btn" (click)="addLocal()" *ngIf="i == 0">
+                <img src="../../../assets/icons/adicionar.png">
+            </div> 
+        </div>
+
+        <select name="city" id="city" [formControlName]="i" (change)="selectChange($event.target.value)">
+            <option *ngFor="let cidade of cidades$ | async" [value]="cidade.nome" [selected]="regiao.cidades[i] == cidade.nome">
+                {{cidade.nome}}
+            </option>
+        </select>
+    </div>
+
+    <div class="remove-city" (click)="removeCity(i)" *ngIf="regiao.cidades.length > 1">
+        <img src="../../../assets/icons/remove.png">
+    </div>
+</div>
+
+</form>

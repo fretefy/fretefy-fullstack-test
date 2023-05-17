@@ -1,0 +1,32 @@
+<div class="page-wrapper">
+  <div class="page-title">
+    <h2 class="page-title">Regiões</h2>
+  </div>
+  <table>  
+    <tr class="header-table">
+      <th>Região</th>
+      <th>Status</th>
+    </tr>
+    <tr class="row-values" *ngFor="let regiao of regioes$ | async">
+      <th>{{regiao.nome}}</th>
+      <th>
+        <div class="status">
+          <span>{{regiao.status}}</span>
+          <div class="status-circle" [class.active]="regiao.status == 'Ativa'" [class.desactive]="regiao.status == 'Desativada'"></div>
+        </div>
+      </th>
+      <th class="action-btn">
+        <button class="status-btn" [class.active]="regiao.status == 'Desativada'" [class.desactive]="regiao.status == 'Ativa'" (click)="changeStatus(regiao)">
+          {{regiao.status == 'Ativa' ? 'Desativar' : 'Ativar'}}
+        </button>
+      </th>
+      <th class="edit-btn" routerLink="/regiao/{{regiao.id}}">
+        <img src="../../../assets/icons/editar.png">
+      </th>
+    </tr>
+  </table>
+
+<div class="add-btn" routerLink="/regiao">
+    <img src="../../../assets/icons/adicionar.png">
+  </div>
+</div>

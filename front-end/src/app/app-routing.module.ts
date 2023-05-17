@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/regioes',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'regioes',
+    loadChildren: () => import('./modules/regioes/regioes.module').then(m => m.RegioesModule)
   },
   {
     path: 'regiao',
-    loadChildren: () => import('./modules/regiao/regiao.module').then(m => m.RegiaoModule)
+    loadChildren: () => import('./components/formulario/formulario.module').then(m => m.FormularioModule)
+  },
+  {
+    path: 'regiao/:id',
+    loadChildren: () => import('./components/formulario/formulario.module').then(m => m.FormularioModule)
   },
   { 
     path: '**', 
-    redirectTo: '/home' 
+    redirectTo: '/regioes' 
   }
 ];
 
