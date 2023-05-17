@@ -1,0 +1,32 @@
+
+<div class="page-wrapper">
+  <form [formGroup]="regiaoGroup" (ngSubmit)="save(regiao)">
+    <div class="page-title">
+      <h2>Cadastro de Região</h2>
+    </div>
+
+    <div class="form-field">
+      <label>Nome</label>
+      <input type="text" placeholder="nome" [(ngModel)]="regiao.nome" formControlName="nome">
+      <div class="error-message" *ngIf="regiaoGroup.get('nome')?.errors">
+        Campo obrigatório
+      </div>
+    </div>
+
+    <div class="form-field">
+      <div class="cities-wrapper">
+        <div class="title">
+          <span class="local-title">Locais da região</span>
+        </div>
+        <div class="local">
+          <cidade-seletor [regiao]="regiao" (cidades)="getCidadesUpdated($event)"></cidade-seletor>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons-wrapper">
+      <button class="cancel-btn" (click)="cancel()">Cancelar</button>
+      <button class="save-btn" [disabled]="!regiaoGroup.valid" type="submit">Salvar</button>
+    </div>
+  </form>
+</div>

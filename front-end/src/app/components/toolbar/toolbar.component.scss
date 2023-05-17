@@ -4,25 +4,35 @@
         display: inline-block;
         padding: 0;
         margin: 0;
-        background-color: #636e72;
+        background-color: #323232; 
         width: 100%;
 
         > li {
+            display: flex;
+            align-items: flex-end;
             > a {
                 display: inline-block;
                 appearance: none;
-                border: none;
-                background-color: #636e72;                
+                border: none;             
                 padding: 12px;
                 text-decoration: none;
                 font-weight: 600;
                 color: #fff;
-                border-bottom: 3px solid #636e72;
+                margin-left: 16px;
 
                 &.active {
-                    border-bottom: 3px solid #2d3436;
+                    border-bottom: 3px solid #FFF;
                 }
             }
         }
     }
+}
+
+.icon {
+    display: flex;
+    padding: 8px 0 8px 16px;
+}
+
+.icon img {
+    width: 46px;
 }
