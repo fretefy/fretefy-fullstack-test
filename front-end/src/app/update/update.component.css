@@ -1,0 +1,28 @@
+h5 {
+  text-align: center;
+}
+
+.card {
+  top: 50%;
+  left: 100%;
+  width: 435px;
+  padding: 31px 40px;
+  transform: translate(-50%, -50%);
+}
+
+#BTNs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#BTNa1 {
+  background-color: #003250;
+  border-radius: 5px;
+  color: white;
+}
+
+#BTNa2 {
+  background-color: #e7ecef;
+  border-radius: 5px;
+}

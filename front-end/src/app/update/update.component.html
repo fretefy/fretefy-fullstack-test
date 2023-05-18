@@ -1,0 +1,84 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <h5>Atualizar dados</h5>
+        <div class="row">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Nome da região</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="regiao"
+                [(ngModel)]="cadastro.regiao"
+                placeholder="Ex.: Nordeste"
+              />
+            </div>
+
+            <h4
+              style="color: #2a556f"
+              class="modal-title fs-5 mb-2"
+              id="exampleModalLabel"
+            >
+              Locais da região
+            </h4>
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label">Estado</label>
+              <input
+                type="email"
+                class="form-control"
+                name="estado"
+                [(ngModel)]="cadastro.estado"
+                placeholder="Ex.: Paraíba"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label">Cidade</label>
+              <input
+                type="text"
+                class="form-control"
+                name="cidade"
+                [(ngModel)]="cadastro.cidade"
+                placeholder="Ex.: João Pessoa"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label">Bairro</label>
+              <input
+                type="text"
+                class="form-control"
+                name="bairro"
+                [(ngModel)]="cadastro.bairro"
+                placeholder="Ex.: Bessa"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label">CEP</label>
+              <input
+                type="number"
+                class="form-control"
+                name="cep"
+                [(ngModel)]="cadastro.cep"
+                placeholder="Ex.: 58000000"
+              />
+            </div>
+          </form>
+        </div>
+        <div id="BTNs">
+          <button (click)="update()" id="BTNa1" class="btn">Atualizar</button
+          >&nbsp;
+          <button (click)="deletecadastro()" id="BTNa2" class="btn">
+            Desativar</button
+          >&nbsp;
+          <button routerLink="/" id="BTNa2" class="btn">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,165 @@
+<div id="MainContainer">
+  <div id="MainHead" class="container d-flex">
+    <h2>Regiões</h2>
+    <button
+      id="BTNcadastrar"
+      class="btn ms-4"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      <span class="fw-bold">+</span> Cadastrar
+    </button>
+    <div class="search-container">
+      <form action="">
+        <fa-icon [icon]="faSearch"></fa-icon>
+        <input type="text" placeholder="Busque por uma região!" (input)="search($event)">
+      </form>
+    </div>
+    <img src="../../assets/fretefy edit.png" alt="">
+  </div>
+
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1
+            style="color: #2a556f"
+            class="modal-title fs-5"
+            id="exampleModalLabel"
+          >
+            Cadastro de região
+          </h1>
+          <button
+            id="BTNclose"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="cadastroform">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Nome da região</label
+              >
+              <input 
+                type="text"
+                class="form-control"
+                formControlName="regiao"
+                placeholder="Ex.: Nordeste"
+              />
+            </div>
+
+            <h4
+              style="color: #2a556f"
+              class="modal-title fs-5 mb-2"
+              id="exampleModalLabel"
+            >
+            Locais da região
+            </h4>
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label"
+                >Estado</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                formControlName="estado"
+                placeholder="Ex.: Paraíba"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label"
+                >Cidade</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                formControlName="cidade"
+                placeholder="Ex.: João Pessoa"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label"
+                >Bairro</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                formControlName="bairro"
+                placeholder="Ex.: Bessa"
+              />
+            </div>
+
+            <div class="mb-3 ms-4">
+              <label for="exampleInputEmail1" class="form-label"
+                >CEP</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                formControlName="cep"
+                placeholder="Ex.: 58000-00"
+              />
+              <div *ngIf="cadastroform.controls['cep'].errors?.['uniqueCep']">
+                Esse CEP já está cadastrado. Por favor, insira um CEP diferente.
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="BTNcancel" class="btn" data-bs-dismiss="modal">
+            Cancelar
+          </button>
+          <button
+            (click)="addcadastro(this.cadastroform.value)"
+            [disabled]="this.cadastroform.invalid"
+            type="button"
+            id="BTNadd"
+            class="btn"
+          >
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="MainForm">
+    <div class="container-fluid mt-3">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th style="color: #2a556f; background-color: #e7f5fd" scope="col" colspan="2">Nome da região</th>
+            <th style="color: #2a556f" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td>{{ item.regiao }}, {{ item.estado }}, {{ item.cidade }}, {{ item.bairro }}, {{ item.cep }} </td>
+            <td colspan="2">
+              <button
+                id="BTNedidar"
+                routerLink="/update/{{ item.id }}"
+                class="btn"
+              >
+                <fa-icon [icon]="faGears"></fa-icon>
+              </button
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

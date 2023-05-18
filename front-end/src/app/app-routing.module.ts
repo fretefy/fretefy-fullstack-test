@@ -1,25 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './modules/home/home.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ListComponent } from './list/list.component';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'regiao',
-    loadChildren: () => import('./modules/regiao/regiao.module').then(m => m.RegiaoModule)
-  },
-  { 
-    path: '**', 
-    redirectTo: '/home' 
-  }
+  {path: 'list', component:ListComponent},
+  {path: 'update/:id', component:UpdateComponent},
+  {path: '', redirectTo: 'list', pathMatch: 'full'}
 ];
 
 @NgModule({

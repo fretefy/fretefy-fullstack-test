@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "regiao": "Norte",
+      "estado": "Amazonas",
+      "cidade": "Manaus",
+      "bairro": "Adrianópolis",
+      "cep": 2700000,
+      "id": 1
+    },
+    {
+      "regiao": "Sudeste",
+      "estado": "Espírito Santo",
+      "cidade": "Vitória",
+      "bairro": "Praia do Canto",
+      "cep": 2900000,
+      "id": 2
+    },
+    {
+      "regiao": "Sudeste",
+      "estado": "Rio de Janeiro",
+      "cidade": "Niterói",
+      "bairro": "Icaraí",
+      "cep": 2000000,
+      "id": 3
+    },
+    {
+      "regiao": "Nordeste",
+      "estado": "Paraíba",
+      "cidade": "João Pessoa",
+      "bairro": "Bessa",
+      "cep": 5800000,
+      "id": 4
+    },
+    {
+      "regiao": "Sul",
+      "estado": "Paraná",
+      "cidade": "Curitiba",
+      "bairro": "Alto da Glória\t",
+      "cep": 8000000,
+      "id": 5
+    },
+    {
+      "regiao": "Nordeste",
+      "estado": "Piauí",
+      "cidade": "Teresina",
+      "bairro": "Cabral",
+      "cep": 6400000,
+      "id": 6
+    },
+    {
+      "regiao": "Sul",
+      "estado": "Santa Catarina",
+      "cidade": "São Francisco do Sul",
+      "bairro": "Laranjeiras",
+      "cep": 8800000,
+      "id": 7
+    }
+  ]
+}
