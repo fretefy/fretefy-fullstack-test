@@ -1,24 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './modules/home/home.module';
-import { ToolbarModule } from './components/toolbar/toolbar.module';
-import { RouterModule } from '@angular/router';
+import { ListComponent } from './list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateComponent } from './update/update.component';
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,
-    
-    HomeModule,
-    ToolbarModule,
-
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,95 @@
+img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 50px;
+}
+
+h2 {
+  color: #003250;
+}
+
+#MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#MainHead {
+  max-width: 800px;
+  align-items: flex-start;
+}
+
+#MainForm {
+  width: 700px;
+  padding: 20px;
+}
+
+.search-container {
+  margin-left: 1em;
+  width: 300px;
+}
+
+.search-container form {
+  width: 100%;
+  position: relative;
+}
+
+.search-container fa-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #003250;
+}
+
+.search-container input {
+  padding: .5em;
+  width: 100%;
+  padding-left: 30px;
+  text-align: left;
+  color: #003250;
+  background-color: #e7ecef;
+  border-radius: 30px;
+  border: none;
+}
+
+#BTNcadastrar {
+  color: #003250;
+  background-color: #e7ecef;
+  border-radius: 20px;
+}
+
+#BTNclose {
+  color: #003250;
+  background-color: #e7ecef;
+  border-radius: 30px;
+
+  font-weight: 200;
+  font-size: 25px;
+  width: 50px;
+  border: none;
+}
+
+#BTNedidar {
+  background-color: #e7ecef;
+  border-radius: 5px;
+}
+
+#BTNcancel {
+  color: #003250;
+  background-color: #e7ecef;
+  border-radius: 5px;
+}
+
+#BTNadd {
+  color: white;
+  background-color: #003250;
+  border-radius: 5px;
+}
+
+#TableForm {
+  border-radius: 40px;
+}
